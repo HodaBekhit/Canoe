@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="Panel" Children="Controls" ControlName="calc_panel">
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl17" Children="Controls" ControlName="Button_equal">
+      <Property Name="Name">ButtonControl17</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">453, 222</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">=</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_equal;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">17</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TextBoxControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="TextBoxControl1" Children="Controls" ControlName="output_box">
+      <Property Name="Name">TextBoxControl1</Property>
+      <Property Name="Size">354, 22</Property>
+      <Property Name="Location">54, 46</Property>
+      <Property Name="AlarmUpperTextColor">WindowText</Property>
+      <Property Name="ValueDecimalPlaces">5</Property>
+      <Property Name="AlarmLowerBkgColor">Salmon</Property>
+      <Property Name="ValueDisplay">Double</Property>
+      <Property Name="AlarmUpperBkgColor">IndianRed</Property>
+      <Property Name="AlarmLowerTextColor">WindowText</Property>
+      <Property Name="BoxFont">Times New Roman, 10.8pt, style=Bold</Property>
+      <Property Name="AlarmUpperFont">Times New Roman, 10.8pt, style=Bold</Property>
+      <Property Name="AlarmLowerFont">Times New Roman, 10.8pt, style=Bold</Property>
+      <Property Name="AlarmGeneralSettings">1;0;0;0</Property>
+      <Property Name="DisplayLabel">Left</Property>
+      <Property Name="TextFont">Times New Roman, 10.8pt, style=Bold</Property>
+      <Property Name="DescriptionText">Display</Property>
+      <Property Name="DescriptionSize">53, 22</Property>
+      <Property Name="UsedValueTable">PhysicalValue</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;output;2;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">16</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl13" Children="Controls" ControlName="Button8">
+      <Property Name="Name">ButtonControl13</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">139, 106</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">8</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_8;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">12</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl14" Children="Controls" ControlName="Button_div">
+      <Property Name="Name">ButtonControl14</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">337, 106</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">/</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_div;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">15</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl15" Children="Controls" ControlName="Button7">
+      <Property Name="Name">ButtonControl15</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">45, 106</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">7</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_7;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">13</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl16" Children="Controls" ControlName="Button9">
+      <Property Name="Name">ButtonControl16</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">237, 106</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">9</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_9;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">14</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl9" Children="Controls" ControlName="Button_clr">
+      <Property Name="Name">ButtonControl9</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">139, 218</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">clr</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_clr;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">8</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl10" Children="Controls" ControlName="Button_mult">
+      <Property Name="Name">ButtonControl10</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">337, 218</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">x</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_mult;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">11</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl11" Children="Controls" ControlName="Button0">
+      <Property Name="Name">ButtonControl11</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">45, 218</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">0</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_0;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">9</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl12" Children="Controls" ControlName="Button_mod">
+      <Property Name="Name">ButtonControl12</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">237, 218</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">mod</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_mod;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">10</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl5" Children="Controls" ControlName="Button2">
+      <Property Name="Name">ButtonControl5</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">139, 181</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">2</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_2;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">4</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl6" Children="Controls" ControlName="Button_sub">
+      <Property Name="Name">ButtonControl6</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">337, 181</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">-</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_sub;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">7</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl7" Children="Controls" ControlName="Button1">
+      <Property Name="Name">ButtonControl7</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">45, 181</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">1</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_1;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">5</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl8" Children="Controls" ControlName="Button3">
+      <Property Name="Name">ButtonControl8</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">237, 181</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">3</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_3;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">6</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl4" Children="Controls" ControlName="Button_add">
+      <Property Name="Name">ButtonControl4</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">337, 142</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">+</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_add;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">3</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl3" Children="Controls" ControlName="Button6">
+      <Property Name="Name">ButtonControl3</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">237, 142</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">6</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_6;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">2</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl2" Children="Controls" ControlName="Button4">
+      <Property Name="Name">ButtonControl2</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">45, 142</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">4</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_4;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ButtonControl, Vector.CANalyzer.Panels.CommonControls, Version=17.3.91.0, Culture=neutral, PublicKeyToken=null" Name="ButtonControl1" Children="Controls" ControlName="Button5">
+      <Property Name="Name">ButtonControl1</Property>
+      <Property Name="Size">78, 26</Property>
+      <Property Name="Location">139, 142</Property>
+      <Property Name="Font">Times New Roman, 10.2pt, style=Bold</Property>
+      <Property Name="Text">5</Property>
+      <Property Name="SymbolConfiguration">8;16;display;;;Button_5;1;;;-1;;;;;;0</Property>
+      <Property Name="TabIndex">0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">630, 306</Property>
+    <Property Name="BackColor">Silver</Property>
+  </Object>
+</Panel>

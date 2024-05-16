@@ -1,0 +1,403 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  /* this flag diffrentiate between op1 and op2 */
+  int op_flag = 0;
+  /* flag used for a corner case */
+  int pressed = 0;
+  
+}
+
+void calculator()
+{
+  switch(@calculator::operation)
+  {
+    case add:
+      @calculator::res =_ceil(@calculator::op1) + _ceil(@calculator::op2);
+      break;
+    case sub:
+      @calculator::res = _ceil(@calculator::op1) - _ceil(@calculator::op2);
+      break;
+    case mult:
+      @calculator::res = _ceil(@calculator::op1) * _ceil(@calculator::op2);
+      break;
+    case div:
+      @calculator::res = _ceil(@calculator::op1) / _ceil(@calculator::op2);
+      break;
+    case mod:
+      @calculator::res = _round64(@calculator::op1) % _round64(@calculator::op2);
+      break;  
+      default:
+      write("Invalid operation");
+  }
+  @display::output = @calculator::res;
+}
+
+on sysvar display::Button_0
+{
+  if(@display::Button_0 == 1)
+  {
+    if(pressed == 1)
+    {
+      op_flag = 0;
+      pressed = 0;
+    }
+    if(op_flag == 0)
+    {
+      @calculator::op1 = (@calculator::op1 * 10) + 0;
+      @display::output = @calculator::op1;
+    }
+    else if(op_flag == 1)
+    {
+      @calculator::op2 = (@calculator::op2 * 10) + 0;
+      @display::output = @calculator::op2;
+    }
+  }
+}
+
+on sysvar display::Button_1
+{
+  if(@display::Button_1 == 1)
+  {
+    if(pressed == 1)
+    {
+      op_flag = 0;
+      pressed = 0;
+      @calculator::op1 = 0;
+    }
+    if(op_flag == 0)
+    {
+      @calculator::op1 = (@calculator::op1 * 10) + 1;
+      @display::output = @calculator::op1;
+    }
+    else if(op_flag == 1)
+    {
+      @calculator::op2 = (@calculator::op2 * 10) + 1;
+      @display::output = @calculator::op2;
+    }
+  }
+}
+
+on sysvar display::Button_2
+{
+  if(@display::Button_2 == 1)
+  {
+    if(pressed == 1)
+    {
+      op_flag = 0;
+      pressed = 0;
+      @calculator::op1 = 0;
+    }
+    if(op_flag == 0)
+    {
+      @calculator::op1 = (@calculator::op1 * 10) + 2;
+      @display::output = @calculator::op1;
+    }
+    else if(op_flag == 1)
+    {
+      @calculator::op2 = (@calculator::op2 * 10) + 2;
+      @display::output = @calculator::op2;
+    }
+  }
+}
+
+on sysvar display::Button_3
+{
+  if(@display::Button_3 == 1)
+  {
+    if(pressed == 1)
+    {
+      op_flag = 0;
+      pressed = 0;
+      @calculator::op1 = 0;
+    }
+    if(op_flag == 0)
+    {
+      @calculator::op1 = (@calculator::op1 * 10) + 3;
+      @display::output = @calculator::op1;
+    }
+    else if(op_flag == 1)
+    {
+      @calculator::op2 = (@calculator::op2 * 10) + 3;
+      @display::output = @calculator::op2;
+    }
+  }
+}
+
+on sysvar display::Button_4
+{
+  if(@display::Button_4 == 1)
+  {
+    if(pressed == 1)
+    {
+      op_flag = 0;
+      pressed = 0;
+      @calculator::op1 = 0;
+    }
+    if(op_flag == 0)
+    {
+      @calculator::op1 = (@calculator::op1 * 10) + 4;
+      @display::output = @calculator::op1;
+    }
+    else if(op_flag == 1)
+    {
+      @calculator::op2 = (@calculator::op2 * 10) + 4;
+      @display::output = @calculator::op2;
+    }
+  }
+}
+
+on sysvar display::Button_5
+{
+  if(@display::Button_5 == 1)
+  {
+    if(pressed == 1)
+    {
+      op_flag = 0;
+      pressed = 0;
+      @calculator::op1 = 0;
+    }
+    if(op_flag == 0)
+    {
+      @calculator::op1 = (@calculator::op1 * 10) + 5;
+      @display::output = @calculator::op1;
+    }
+    else if(op_flag == 1)
+    {
+      @calculator::op2 = (@calculator::op2 * 10) + 5;
+      @display::output = @calculator::op2;
+    }
+  }
+}
+
+on sysvar display::Button_6
+{
+  if(@display::Button_6 == 1)
+  {
+    if(pressed == 1)
+    {
+      op_flag = 0;
+      pressed = 0;
+      @calculator::op1 = 0;
+    }
+    if(op_flag == 0)
+    {
+      @calculator::op1 = (@calculator::op1 * 10) + 6;
+      @display::output = @calculator::op1;
+    }
+    else if(op_flag == 1)
+    {
+      @calculator::op2 = (@calculator::op2 * 10) + 6;
+      @display::output = @calculator::op2;
+    }
+  }
+}
+
+on sysvar display::Button_7
+{
+  if(@display::Button_7 == 1)
+  {
+    if(pressed == 1)
+    {
+      op_flag = 0;
+      pressed = 0;
+      @calculator::op1 = 0;
+    }
+    if(op_flag == 0)
+    {
+      @calculator::op1 = (@calculator::op1 * 10) + 7;
+      @display::output = @calculator::op1;
+    }
+    else if(op_flag == 1)
+    {
+      @calculator::op2 = (@calculator::op2 * 10) + 7;
+      @display::output = @calculator::op2;
+    }
+  }
+}
+
+on sysvar display::Button_8
+{
+  if(@display::Button_8 == 1)
+  {
+    if(pressed == 1)
+    {
+      op_flag = 0;
+      pressed = 0;
+      @calculator::op1 = 0;
+    }
+    if(op_flag == 0)
+    {
+      @calculator::op1 = (@calculator::op1 * 10) + 8;
+      @display::output = @calculator::op1;
+    }
+    else if(op_flag == 1)
+    {
+      @calculator::op2 = (@calculator::op2 * 10) + 8;
+      @display::output = @calculator::op2;
+    }
+  }
+}
+
+on sysvar display::Button_9
+{
+  if(@display::Button_9 == 1)
+  {
+    if(pressed == 1)
+    {
+      op_flag = 0;
+      pressed = 0;
+      @calculator::op1 = 0;
+    }
+    if(op_flag == 0)
+    {
+      @calculator::op1 = (@calculator::op1 * 10) + 9;
+      @display::output = @calculator::op1;
+    }
+    else if(op_flag == 1)
+    {
+      @calculator::op2 = (@calculator::op2 * 10) + 9;
+      @display::output = @calculator::op2;
+    }
+  }
+}
+
+
+
+on sysvar display::Button_add
+{
+  if(@display::Button_add == 1)
+  {
+    if(op_flag == 0)
+    {
+      @calculator::operation = add;
+      op_flag = 1;
+    }
+    else if(op_flag == 1)
+    {
+      calculator();
+      @calculator::operation = add;
+      @calculator::op1 = @calculator::res;
+      @calculator::op2 = 0;
+      op_flag = 1;
+    }
+  }
+}
+
+on sysvar display::Button_sub
+{
+  if(@display::Button_sub == 1)
+  {
+    if(op_flag == 0)
+    {
+      @calculator::operation = sub;
+      op_flag = 1;
+    }
+    else if(op_flag == 1)
+    {
+      calculator();
+      @calculator::operation = sub;
+      @calculator::op1 = @calculator::res;
+      @calculator::op2 = 0;
+      op_flag = 1;
+    }
+  }
+}
+
+on sysvar display::Button_mult
+{
+  if(@display::Button_mult == 1)
+  {
+    if(op_flag == 0)
+    {
+      @calculator::operation = mult;
+      op_flag = 1;
+    }
+    else if(op_flag == 1)
+    {
+      calculator();
+      @calculator::operation = mult;
+      @calculator::op1 = @calculator::res;
+      @calculator::op2 = 0;
+      op_flag = 1;
+    }
+  }
+}
+
+on sysvar display::Button_div
+{
+  if(@display::Button_div == 1)
+  {
+    if(op_flag == 0)
+    {
+      @calculator::operation = div;
+      op_flag = 1;
+    }
+    else if(op_flag == 1)
+    {
+      calculator();
+      @calculator::operation = div;
+      @calculator::op1 = @calculator::res;
+      @calculator::op2 = 0;
+      op_flag = 1;
+    }
+  }
+}
+
+on sysvar display::Button_mod
+{
+  if(@display::Button_mod == 1)
+  {
+    if(op_flag == 0)
+    {
+      @calculator::operation = mod;
+      op_flag = 1;
+    }
+    else if(op_flag == 1)
+    {
+      calculator();
+      @calculator::operation = mod;
+      @calculator::op1 = @calculator::res;
+      @calculator::op2 = 0;
+      op_flag = 1;
+    }
+  }
+}
+
+
+on sysvar display::Button_equal
+{
+  if(@display::Button_equal == 1)
+  {
+    if(op_flag == 0)
+    {
+      
+    }
+    else if(op_flag == 1)
+    {
+      calculator();
+      @calculator::op1 = @calculator::res;
+      @calculator::op2 = 0;
+      op_flag = 1;
+      pressed = 1;
+    }
+  }
+}
+
+
+on sysvar display::Button_clr
+{
+  if(@display::Button_clr == 1)
+  {
+    @calculator::op1 = 0;
+    @calculator::op2 = 0;
+    @calculator::res = 0;
+    op_flag = 0;
+    @display::output = 0;
+  }
+}
